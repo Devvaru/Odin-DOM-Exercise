@@ -22,3 +22,18 @@ const h3_text = document.createTextNode('I\'m a blue h3!'
 h3.style.color = 'blue';
 h3.appendChild(h3_text);
 document.body.appendChild(h3);
+
+//div container
+const div = document.createElement('div');
+div.style.borderWidth = '5px';
+div.style.borderColor = 'black';
+div.style.borderStyle = 'solid';
+div.style.background = 'pink';
+document.body.appendChild(div);
+
+    const h1 = document.createElement('h1');
+    const h1_text = document.createTextNode('I\'m in a div'
+    );
+    h1.appendChild(h1_text);
+    document.body.appendChild(h3);
+    div.appendChild(h1);
