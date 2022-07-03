@@ -29,7 +29,6 @@ div.style.borderWidth = '5px';
 div.style.borderColor = 'black';
 div.style.borderStyle = 'solid';
 div.style.background = 'pink';
-document.body.appendChild(div);
 
     const h1 = document.createElement('h1');
     const h1_text = document.createTextNode('I\'m in a div'
@@ -37,3 +36,11 @@ document.body.appendChild(div);
     h1.appendChild(h1_text);
     document.body.appendChild(h3);
     div.appendChild(h1);
+    
+    const p2 = document.createElement('p');
+    const p_text2 = document.createTextNode('ME TOO!');
+    p2.appendChild(p_text2);
+    document.body.appendChild(p2);
+    div.appendChild(p2);
+
+document.body.appendChild(div);
