@@ -15,3 +15,10 @@ const p_text = document.createTextNode('Hey I\'m red!');
 p.style.color = 'red';
 p.appendChild(p_text);
 document.body.appendChild(p);
+
+const h3 = document.createElement('h3');
+const h3_text = document.createTextNode('I\'m a blue h3!'
+);
+h3.style.color = 'blue';
+h3.appendChild(h3_text);
+document.body.appendChild(h3);
