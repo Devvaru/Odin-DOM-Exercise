@@ -44,3 +44,30 @@ div.style.background = 'pink';
     div.appendChild(p2);
 
 document.body.appendChild(div);
+
+
+// Adding button method 2
+// const btn = document.querySelector('#btn');
+// btn.onclick = () => alert("Hello World");
+
+// Adding button method 3 (best method)
+// const btn = document.querySelector('#btn');
+// btn.addEventListener('click', () => {
+//   alert("Hello World");
+// });
+
+// Adding button using named functions (best method)
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+  }
+
+// METHOD 2
+// btn.onclick = alertFunction;
+
+// METHOD 3
+btn.addEventListener('click', alertFunction);
+
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
+  
